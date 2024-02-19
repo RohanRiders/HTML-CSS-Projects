@@ -1,0 +1,1 @@
+alert("Pssst, this is your JavaScript speaking")
