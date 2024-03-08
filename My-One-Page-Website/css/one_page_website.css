@@ -1,0 +1,19 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    background-color: grey;
+}
+
+h1 h2 h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    color: aqua;
+}
+
+input[type=text] {
+    width: 50%;
+    margin: 8px, 0;
+    border: 1px solid #ccc ;
+    border-radius: 4px;
+    
+}
