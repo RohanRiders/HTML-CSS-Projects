@@ -13,13 +13,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link text-light" href="#">About</a>                
+                  <a class="nav-link text-light"  href="#about">About</a>                
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link text-light" href="#">Showtimes</a>
+                  <a class="nav-link text-light" href="#showtimes">Showtimes</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link text-light" href="#">Deals</a>
+                    <a class="nav-link text-light" href="#rewards">Deals</a>
                   </li>
               </ul>
               <form class="form-inline my-2 my-lg-0 ">
@@ -37,7 +37,8 @@
             </div>
           </div>
 
-          <div class="container">
+          <h2>About</h2>
+          <div id="about" class="container">
             <div class="row">
               <div class="col-sm">
                 <img class="img-fluid" src="./images/pdx.jpg" alt=""/>
@@ -50,7 +51,7 @@
                     Relax in our, extra-wide, plush cushioning recliners. OUr seating arrangement is disability friendly &#9855;.
                      </p>
                 
-              <!--ShowTimes-->
+              
               </div>
               <div class="col-sm">
                 <h3>Now Playing</h3>
@@ -66,16 +67,66 @@
                     </li>
                   </ul>            
                 </div>
+                <!--ShowTimes-->
+                
+                <div id="showtimes" class="container my-5 text-left">
+                  <h2>Show Times:</h2>
+                  <div class="row">
+                    <div class="col-sm border border-secondary">
+                      <div>
+                        <img class="img-fluid" src="./images/kongskullisland.jpg" alt=""/>
+                      </div>
+                      <h3>Kong Skull Island</h3>
+                      <p> After the Vietnam war, a team of scientists explores an uncharted island in the Pacific, 
+                        venturing into the domain of the mighty Kong and must fight to escape a primal Eden. </p>
 
+                        <span class="badge bg-info text-dark">1:00pm</span>
+                        <span class="badge bg-info text-dark">3:00pm</span>
+                        <span class="badge bg-info text-dark">5:30pm</span>
+                        <span class="badge bg-info text-dark">7:00pm</span>
+                        <span class="badge bg-info text-dark">9:30pm</span>
+
+                    </div>
+                    <div class="col-sm border border-secondary">
+                      <div>
+                        <img class="img-fluid" src="./images/ghostintheshell.jpg" alt=""/>
+                      </div>
+                      <h3>Ghost in the Shell</h3>
+                      <p> In the near future, humans are augmented with cybernetic improvements such as vision, strength and intelligence. 
+                        Augmentation developer Hanka Robotics establishes a secret project to develop an artificial body, or "shell", that can integrate a human brain rather than an AI.</p>
+
+                        <span class="badge bg-info text-dark">1:00pm</span>
+                        <span class="badge bg-info text-dark">3:00pm</span>
+                        <span class="badge bg-info text-dark">5:30pm</span>
+                        <span class="badge bg-info text-dark">7:00pm</span>
+                        <span class="badge bg-info text-dark">9:30pm</span>
+
+                    </div>
+                    <div class="col-sm border border-secondary">
+                      <div>
+                        <img class="img-fluid" width="100%"  src="./images/beautyandthebeast.jpg" alt=""/>
+                      </div>
+                      <h3>Beauty and the Beast</h3>
+                      <p> Beauty and the Beast depicts the story of a beautiful young lady, Belle, who committed her life to an ugly Beast to save her father from death. 
+                        Belle, in her simplicity requests a rose from her father on his leaving for a journey; however this rose as simple as it appears will cost Belle her freedom.</p>
+                    
+                        <span class="badge bg-info text-dark">1:00pm</span>
+                        <span class="badge bg-info text-dark">3:00pm</span>
+                        <span class="badge bg-info text-dark">5:30pm</span>
+                        <span class="badge bg-info text-dark">7:00pm</span>
+                        <span class="badge bg-info text-dark">9:30pm</span>
+
+                      </div>
+                  </div>
+                </div>
                 <!-- END ShowTimes-->
                  
-                <div class="text-center">
+                <div class="text-center" id="rewards">
                   <form>
                     <h1 class="text-primary my-5">Sign up for Movie Club Rewards!</h1>
                     <div class="form-group">
                       <label for="exampleInputEmail1">Email address</label>
                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </form>
