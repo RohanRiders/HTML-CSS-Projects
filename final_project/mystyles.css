@@ -1,0 +1,167 @@
+/********NAV BAR*****/
+.Navbar {
+    overflow: hidden;
+    background-color: red;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    -webkit-animation: movNav 5s;
+    animation: moveNav 5s;
+}
+
+@keyframes moveNav {
+    from {left: -100vww;}
+    to {left: 0vw;}
+}
+
+.Navbar a {
+    float: left;
+    display: block;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Avant Garade, Helvetica;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    -webkit-animation: moveNavText 5.75;
+    animation: moveNavText 5.75s; 
+}
+
+@keyframes moveNavText {
+    from {top: -100vw;}
+    top {top: 0vw;}
+}
+
+@media screen and (max-width: 576px) {
+    .Navbar a {
+        width: 25%;
+        font-size: 20px;
+    }
+}
+
+.Navbar a:hover {
+    background-color: grey;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.Navbar a.active {
+    background-color: darkgrey;
+}
+
+/*******End of Navbar***************/
+
+/*******VIDEO STYLING***************/
+#Mountain_Video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 576px) {
+    #TypeVideo {
+        display: none;
+    }
+}
+
+/*Texts over the video */
+.Video_Text {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 100%;
+    padding: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    -webkit-animation: moveVideoText 5.75s;
+    animation: moveVideoText 5.75s;
+}
+
+@keyframes moveVideoText {
+    from {top: -100vw;}
+    to {top: 0vw;}
+        
+}
+
+.center {
+    text-align: center;
+}
+
+.center:hover {
+    transition: tranform 2s;
+    transform: scale(1.1);
+}
+
+/*******END of VIDEO STYLING*****/
+
+/*******TABLE STYLING*********/
+* {
+    box-sizing: border-box;
+}
+
+.Column_1 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 3%;
+    height: 400px;
+    background-color: white;
+}
+
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background: grey;
+}
+
+.Column_tall {
+    padding-top: 3.5%;
+    height: 450px;
+}
+
+.img_location {
+    width: 342px;
+    height: 342px;
+}
+
+.Row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+ /*******END of TABLE Styling****/
+
+ /*******CONTACT FORM STYLING*****/
+ input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: Perpetua, Rockwell Extra Bold;
+ }
+
+ input[type=submit]:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.5);
+    transition: transform 1.5s;
+ }
+
+ form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-family: "Trebuchet MS", Optima;
+ }
