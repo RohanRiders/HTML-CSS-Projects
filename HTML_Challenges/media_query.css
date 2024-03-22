@@ -1,0 +1,13 @@
+body {
+    background-color: aqua;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    p {
+        background-color: red;
+    }
+    
+}
