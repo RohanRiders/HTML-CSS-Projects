@@ -17,3 +17,8 @@ input[type=text] {
     border-radius: 4px;
     
 }
+
+#mainDiv {
+ margin: 0;
+ text-align: center;
+}
