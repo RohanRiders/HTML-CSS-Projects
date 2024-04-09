@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JQuery Demo</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+    <script>
+
+        //When the DOM document is ready do the function. The function is simply used to append content to the html document. 
+        $(document).ready(function() {
+            $("html").append(
+            "<body>\
+                <div id='container'>\
+                    <div id='inner'>\
+                        <h1>Basic JQuery</h1>\
+                        <p id='1'>Paragraph 1</p>\
+                        <p id='2'>Paragraph 2</p>\
+                        <p id='3'>Paragraph 3</p>\
+                    </div>\
+                </div>\
+            </body>"
+            );
+            //Remember you initializing JQuery with the'$', targeting the element you want and adding the function. 
+            //$("p").css({"color":"red"});
+            $("#2").css({"color":"red"});
+            $("#3").click(function(){
+                $('h1').fadeOut();
+            });
+
+            $("#1").click(function() {
+                $("p").slideToggle(1000);
+            })
+        });
+    </script>
+</body>
+
+</html>
