@@ -118,7 +118,18 @@
                 </div>
                 
                 <!-- END ShowTimes-->
+
+                <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+                    <div class="container">
+                      <h1 class="display-4 hidden-sm-down" style="color: #fff;font-family: roboto; font-weight: 900;text-transform: uppercase;">Movie Deals</h1>
+                      <p class="lead">Check out our monthly deals...</p>
+                      <!--Movie deals-->
+                      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#register">See our monthly movie deals</button>
+                      <!--/movie deals-->
+                    </div>
+                </div>
                  
+                <!--Sign UP-->
                 <div class="text-center" id="rewards">
                   <form>
                     <h1 class="text-primary my-5">Sign up for Movie Club Rewards!</h1>
@@ -126,11 +137,75 @@
                       <label for="exampleInputEmail1">Email address</label>
                       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="right" data-content="Submit your email to receive great movie rewards!">
+                      Sign Up!
+                    </button>
                   </form>
                 </div>
+                <!--Form Modal-->
+                    <!-- Modal -->
+                    <div class="modal fade" id="register" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Register to receive movie deals.</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            
+                            <form>
+                              <div class="form-group">
+                                <label for="formGroupExampleInput">First Name</label>
+                                <input type="text" class="form-control" id="firstname" placeholder="">
+                              </div>
+                              <div class="form-group">
+                                <label for="formGroupExampleInput2">Last Name</label>
+                                <input type="text" class="form-control" id="lastname" placeholder="">
+                              </div>
+                              <div class="form-group">
+                                <label for="formGroupExampleInput2">Email Address</label>
+                                <input type="text" class="form-control" id="emailaddress" placeholder="">
+                              </div>
+                            </form>
 
 
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                <!--End of Form Modal-->
+
+                <!--Beginning of Carousel-->
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="height: 500px; width: 700px; margin: auto;">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./images/beautyandthebeast.jpg" class="d-block w-100" alt="Oops">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/ghostintheshell.jpg" class="d-block w-100" alt="Oops">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./images/kongskullisland.jpg" class="d-block w-100" alt="Oops">
+                    </div>
+                  </div>
+                 <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </button>
+                </div>
+                <!--End of Carousel-->
+
+                <!--Footer-->
                 <div class="container my-5">
                   <ul class="nav nav-inline">
                       <li class="nav-item">
@@ -154,8 +229,15 @@
     
     <!--Optional JavaScript-->
     <!--JQuery first, then Popper.js, then BootStrap.js-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+    <script>$('.popover-dismiss').popover({
+      trigger: 'focus'
+    })
+    </script>
+  
+  
   </body>
 </html>
