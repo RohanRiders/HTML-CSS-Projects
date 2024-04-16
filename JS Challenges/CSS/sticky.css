@@ -1,0 +1,13 @@
+button {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    float: left;
+    background-color: yellow;
+    padding: 50px;
+    font-size: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}

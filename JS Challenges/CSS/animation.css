@@ -1,0 +1,17 @@
+
+div {
+    width: 100px;
+    height: 20px;
+    background: red;
+    position: relative;
+    animation: myAnimation 5s infinite;
+}
+
+img {
+    width: 100%;
+}
+
+@keyframes myAnimation {
+    from {top: 0px;}
+    to {top: 200px;}
+}

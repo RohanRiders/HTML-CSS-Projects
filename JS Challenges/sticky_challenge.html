@@ -1,0 +1,40 @@
+<!--Complete these tasks:
+
+    Create a sticky contact button on the bottom right of a web page.
+
+    Make it so that a contact form pop ups when the sticky contact button is clicked.
+
+HELPFUL LINKS:
+
+    https://www.w3schools.com/howto/howto_css_sticky_element.asp
+
+    https://www.w3schools.com/css/css3_buttons.asp
+
+    https://www.w3schools.com/howto/howto_js_popup_form.asp-->
+
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sticky Challenge</title>
+    <link rel="stylesheet" href="./CSS/sticky.css">
+  </head>
+  <body>
+    <script>
+        function displayForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+    </script>
+    
+	<h1>Sticky Button</h1>
+
+    <div class="sticky">
+        <button id="myForm" onclick="displayForm()">Open From </button>
+    </div>
+    
+
+
+  </body>
+</html>
