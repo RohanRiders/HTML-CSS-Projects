@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping To Do List</title>
+
+
+        <link rel="stylesheet" href="css/todo_app.css">
+        <script src="js/todo_app.js"></script>
+    </head>
+<body>
+    <div class="todo_container">
+        <input id="task"><button id="add">Add Item</button>
+        <hr>
+
+        <div class="list_container">
+            <div id="list_item1">
+                <label id="grocery_shopping"> Grocery Shopping </label>
+                <button class="list_btn" type="button" id="grocery_shopping_btn" onclick="ShoppingRemoved()">X</button>
+            </div>
+
+            <div id="list_item2">
+                <label id="car_maintenance"> Car Maintenance </label>
+                <button class="list_btn" type="button" id="carMaintenance" onclick="MaintenanceRemoved()">X</button>
+            </div>
+
+            <div id="list_item3">
+                <label id="yard_work"> Yard Work </label>
+                <button class="list_btn" type="button" id="yard_work" onclick="YardWorkRemoved()">X</button>
+            </div>
+
+            <label id="completed">Here are the completed tasks:</label>
+            <p id="completed_tasks" ondblclick="myfunction()">...</p>
+            
+            
+            
+        </div>
+    </div>  
+</body>
+<footer>
+    <div>
+        <p>Shopping List LLC &copy - All right reserved - Author: Jim Smith </p>
+    </div>
+</footer>
+</html> 

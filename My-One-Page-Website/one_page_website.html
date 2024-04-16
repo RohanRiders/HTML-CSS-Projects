@@ -7,14 +7,24 @@
 			<link rel="stylesheet" href="css/one_page_website.css">
 			<script src="./JS/one_page_website.js"></script>
 			<link rel="stylesheet" href="./CSS/OPW.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     		<script src="./JS/lightbox-plus-jquery.js"></script>
+			<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 			<title>Lets Learn Albanian</title>
 		</head>
 	</div>
 <!--End of Header-->
 <!--Body-->
 	<div id="mainDiv">
-		<body>
+		<body>  
+			<button type="button" class="btn btn-primary"></button>
+			<script>
+				document.body.classList.add('fade-out');
+
+				window.addEventListener('DOMContentLoaded', () => {
+					document.body.classList.remove('fade-out');
+				});
+			</script>
 			<!--NAV-->
 			<div class="Navigation">
 				<nav>
@@ -25,15 +35,17 @@
 				</nav>
 			</div>				
 			<!--END of NAV-->
+			
+			<!--About-->
 			<div class="img"><img src="./images/albanian_image1.jpg"></div>
 			<div id="home">
 				<h1> A little About the Instructor</h1>
-				<p> I learned albanian while living in the country for two years. I was part of a global church organization <br>
-					seeking those in need. I had the opportunity to learn the language and interact with the people and culture. <br>
+				<p> I learned albanian while living in the country for two years. I had the opportunity to learn the language and interact with the people and culture. <br>
 					I hope you will find the same enjoyment I did in learning the language.
 				</p>
 			</div>
 			<div>
+			<!--End of About-->
 			<!-- IMAGE GALLERY-->
 				<section>
 					<h1>Images of Albania</h1>
@@ -99,16 +111,16 @@
 			</section>
 			<!-- FORM -->
 			<div id="contact">
-				<form action="" method="post">
-				<input class="rsvp" type="text" value="First Name">
-				<input class="rsvp" type="text" value="Last Name">
-				<input class="rsvp" type="text" value="Email Address">
-				<input class="rsvp" type="text" value="Phone Number">
+				<form id="target" method="post">
+					<input  class="rsvp" type="text" value="" placeholder="First Name">
+					<input  class="rsvp" type="text" value="" placeholder="Last Name">
+					<input  class="rsvp" type="text" value="" placeholder="Email Address">
+					<input  class="rsvp" type="text" value="" placeholder="Phone Number">
 					<div class="form-spacer">
 						<label class="terms">Terms and Conditions</label>
 					</div>
 					<div>
-						<input type="submit" value="Submit">
+						<input type="submit" value="Submit" >
 					</div>
 				</form>
 			</div>

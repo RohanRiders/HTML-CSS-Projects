@@ -28,6 +28,7 @@
 
 html {
     box-sizing: border-box;
+    background-color: black;
   }
   
   *, *:before, *:after {
@@ -36,6 +37,13 @@ html {
   
   body {
     margin: 0;
+    opacity: 1;
+    transition: 1s opacity;
+  }
+
+  body.fade-out {
+    opacity: 0;
+    transition: none
   }
   
   /* You define the style of our previews here, you are using flex to display the images 
@@ -174,3 +182,77 @@ html {
   .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
   }
+
+  h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5em;
+  }
+
+  p {
+    font-size: 3vw;
+    text-align: center;
+  }
+
+  p a{
+    color: #e1e1e1;
+    text-decoration: none;
+  }
+
+  p a:hover{
+    color: #fff;
+    
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+
+  .my-form {
+    padding: 2em;
+    color: #fff;
+    max-width: 100%;
+    margin-inline: auto;
+    box-shadow: 0px 4px 6px 0px rgb(0 , 0, 0, .5);
+  }
+
+  .form-control {
+    background-color: inherit;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    padding-left: 0;
+  }
+
+  .form-control:focus {
+    background-color: inherit;
+    color: #fff;
+    box-shadow: none;
+    border-color: #fff;
+
+  }
+
+  .my-form .btn {
+    border-radius: 0;
+    width: 100%;
+    font-weight: bold;
+  }
+
+  .my-form .btn:hover {
+    background-color: inherit;
+    color: #fff;
+    border-color: #fff;
+  }
+
+  .btn-close {
+    position: absolute;
+    right: 0;
+    padding: 1em;
+  }
+
+  .modal-content {
+    width: 80%;
+    margin-inline: auto;
+  }
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>JSON to String Assignment</title>
+    
+<body>
+
+<p id="vehicle">Here is a paragraph about vehicles</p>
+
+    <script>
+        //creating a JS dictionary object
+
+        var vehicle = {year: "2008", make: "Honda", model: "civic"};
+        /*convert JS objects to string format*/
+        var JSONstring = JSON.stringify(vehicle);
+        document.getElementById("vehicle").innerHTML = JSONstring;
+    </script>
+
+    <p id="animal"> Here is a paragaph about animals</p>
+    <script>
+        var animals = '{"bird": "eagles", "beast": "bear", "fish": "salmon"}';
+        /*convert string to JSON object */
+        var JSONobject = JSON.parse(animals);
+        document.getElementById("animal").innerHTML = JSONobject.bird + " feast on " + JSONobject.fish;
+    </script>
+    
+
+</body>
+</html> 

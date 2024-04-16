@@ -1,3 +1,15 @@
+//This is the logic for your form submition. If a field is empty alert the user. 
+
+ 
+/*$('form').on("submit", function(event) {
+  if ($("rsvp").first().val() === "") {
+    alert("You need to fill out the form.");
+    return false
+  }
+})
+*/
+
+
 // Initialize here and run showSlide() to give your lightbox a default state.
 
 let slideIndex = 1;
