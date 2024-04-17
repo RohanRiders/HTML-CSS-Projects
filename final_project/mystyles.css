@@ -1,7 +1,18 @@
+html {
+    scroll-behavior: smooth;
+} 
+
+/*body {
+    margin: 0;
+    opacity: 1;
+}
+*/
+
+
 /********NAV BAR*****/
 .Navbar {
     overflow: hidden;
-    background-color: red;
+    background-color: rgb(14, 126, 218);
     position:fixed;
     top: 0;
     left: 0;
@@ -57,7 +68,7 @@
 /*******VIDEO STYLING***************/
 #Mountain_Video {
     position: fixed;
-    right: 0;
+    top: 0;
     bottom: 0;
     min-width: 100%;
     z-index: -1;
@@ -74,10 +85,8 @@
     background: rgba(0, 0, 0, 0.5);
     color: white;
     width: 100%;
-    padding: 100%;
-    position: relative;
-    top: 0;
-    left: 0;
+    padding: 5%;
+    padding-top: 2vh;
     -webkit-animation: moveVideoText 5.75s;
     animation: moveVideoText 5.75s;
 }
@@ -86,6 +95,19 @@
     from {top: -100vw;}
     to {top: 0vw;}
         
+}
+
+h1 {
+    margin: 0;
+    text-align: center;
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: x-large;
+    padding: 1vh;
+    text-align: center;
 }
 
 .center {
@@ -98,6 +120,46 @@
 }
 
 /*******END of VIDEO STYLING*****/
+
+/*********Slideshow Styling******/
+#Slideshow_Container {
+    width: 39.5vw;
+    height: auto;
+    padding-top: 10px;
+    margin: auto;
+    text-decoration: none;
+}
+
+.Slideshow_text {
+    color: white;
+    padding: .30vw;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    width: 21.5%;
+    text-align: center;
+    font-family: perpetua, Rockwell Extra Bold;
+    letter-spacing: .1vw;
+    font-size: 1.5vw;
+    background-color: black;
+
+    margin: 0;
+        
+    transform: translate(-50%, -50%);     
+    z-index: 1;
+    box-sizing: border-box;
+    
+}
+
+.Slideshow_Image {
+    margin: auto auto auto auto;
+    box-shadow: 0px 5px 10px 12px rgba(0, 0, 0, 0.75);
+}
+
+.mySlides {
+    margin: 0 0 0 0;
+}
+
 
 /*******TABLE STYLING*********/
 * {
@@ -124,7 +186,7 @@
 
 .Column_tall {
     padding-top: 3.5%;
-    height: 450px;
+    height: 400px;
 }
 
 .img_location {

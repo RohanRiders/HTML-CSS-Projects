@@ -9,14 +9,16 @@
     </head>
 
     <!--Body-->
-    <body>
+    <body class="Background">
 
         <!--Navbar-->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
+            <!--Slided Show added-->
+            <a href="#slideshow">Slideshow</a>
             <a href="#About">About</a>
             <a href="#Github">Github</a>
-            <a href="#Contact">Contact</a>
+            <a href="#Contact" onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
         </div>
 
         <!--Break inserted to add space between navbar and the first heading-->
@@ -34,31 +36,48 @@
 
         <!--Video text-->
         <div class="Video_Text">
-            <h1 class="white-text"> Rohan Rider's Portfolio </h1>
+            <h1 class="white-text"> Trason Carver's Portfolio </h1>
             <strong>
                 <p class="center">
-                    <q>
-                        My quote
+                    <q>The computer programmer is a creator of universes for which he alone is the lawgiver. No playwright, no stage director, no emperor, <br> 
+                         however powerful, has ever exercised such absolute authority to arrange a stage or
+                        field of battle and to command such unswervingly dutiful actors or troops.
                     </q>
-                    <br> -Me
+                    <br> -Joseph Weizenbaum
                     <br>
-                    <br> My name is Aragorn son of Arithorn
+                    <P>
+                        My name is Trason. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    </P>
                     <br>
-                    <br> Take a look around, stay a while, enjoy! 
+                    <br> 
+                    <p>
+                        Take a look around, stay a while and enjoy!
+                    </p> 
                 </p>
             </strong>
+        </div>
+
+        <!--Slide Show-->
+        <div id="Slideshow_Background">
+            <!--slide 1 of 6-->
+            <div id="Slideshow_Container">
+                <div class="mySlides fade" style="text-align: center;" style="display: block;">
+                    <img class="Slideshow_Image" src="./images/trason_pic.jpg" alt="picture of myself">
+                    <div class="Slideshow_text">How can I be of service to you?</div>
+                </div>
+            </div>
         </div>
 
         <!--About Section-->
         <!--Left Column-->
         <div class="Row" id="About">
             <div class="Column_2">
-                <img class="img_location" src="./images/trason_pic.jpg" alt="profile picture">
+                <img class="img_location" src="./images/software_coding.jpg" alt="picture of software" style="width: 335px; height: 151px; scale: 1.5; margin: 100px;">
             </div>
             <di class="Column_1">
                 <h1>About</h1>
                 <p>
-                    I am a software security professional who loves to learn, create and secure technology. I ware a lot of hates in my life but I'm proud to say I'm a husband and father. 
+                    I am a software security professional who loves to learn, create and secure technology. I wear a lot of hats in my life but, I'm most proud to wear the hat of husband and father. 
                     <br>
                     <br> I am a graduate of <a href="https://www.learncodinganywhere.com/">The Tech Academy's</a> Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
                     <br>
@@ -79,33 +98,41 @@
                     <p class="center"><a href="https://github.com/RohanRiders/HTML-CSS-Projects" target="_blank">My Github</a></p>
                 </p>
             </div>
+            <div>
+                <!--Right Column-->
+                <div class="Column_2">
+                    <a href="https://www.linkedin.com/in/trason-carver/" target="_blank"><img src="./images/linkedin_logo.png" style="padding: 100px 0px 200px 300px;"></a>
+                </div>
+            </div>
         </div>
 
-        <!--Right Column-->
+        <!--Bottom Left Column-->
         <div class="Column_2">
             <a href="https://github.com/RohanRiders/HTML-CSS-Projects" target="_blank"><img class="img_location" src="./images/pexels-lukas-574071.jpg" alt="person typing"></a>
         </div>
 
         <!--Contact Section-->
         <div class="Row" id="Contact"> 
+            
             <!--Contact image, left column-->
-            <div class="Column_2 Column_tall">
-                <h1>Contact</h1>
+            <div class="Column_1">
+                <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
                 <!--This specifies where and how to send the form data; we are leaving it blank-->
                 <form action="" method="POST"> <!--Here we are utilizing a 3rd party service to submit the contact form data, inset your formspread endpoint in the action attribute-->
-                    <label>Name:</label>
+                    <h1>Contact</h1>
+                    <label><b>Name:</b></label>
                         <input type="text" placeholder="Please enter your name here">
-                    <label>Email:</label>
+                    <label><b>Email:</b></label>
                         <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        <input type="submit" value="SUBMIT">
+                        
+                    <button type="submit" value="SUBMIT">SUBMIT</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                 </form>
             </div>
         </div>
 
         <footer>
-            <p>
-                <p> Copy right LLC</p>
-            </p>
+                <p class="center">&copy  Copy right LLC</p>            
         </footer>
     </body>
 </html>
