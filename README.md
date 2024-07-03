@@ -1,2 +1,2 @@
 # HTML-CSS-Projects
-Project for all my HTML &amp; CSS assignments while in the Tech Academy course. 
+Here are all my project for HTML &amp; CSS, and JavaScript while in schooling. The main project of focus is the Final Project. There is where I put everything I learned into one project. 
