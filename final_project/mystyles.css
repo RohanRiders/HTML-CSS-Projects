@@ -380,9 +380,9 @@ footer {
 }
 
 .form-container {
-    max-width: 100%;
+    max-width: 49vw;
     padding: 1vw;
-    background-color: white;
+    background-color: darkgray;
 }
 
 .form-container input[type=text] {
