@@ -4,8 +4,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width" />
-        <title>Rider of Rohan</title>
+        <title>Trason's Profile </title>
+        <link rel="shortcut icon" type="img/jpg" href="./images/software_coding.jpg">
         <link rel="stylesheet" type="text/css" href="./mystyles.css">
+        <script src="./js/portfolio.js"></script> 
     </head>
 
     <!--Body-->
@@ -18,7 +20,8 @@
             <a href="#slideshow">Slideshow</a>
             <a href="#About">About</a>
             <a href="#Github">Github</a>
-            <a href="#Contact" onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
+        <!--Onclick and ondblclick functions added to open and close the contact form-->
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact" href="#Contact">Contact</a>
         </div>
 
         <!--Break inserted to add space between navbar and the first heading-->
@@ -49,7 +52,6 @@
                         My name is Trason. Welcome to my portfolio website. On it, I will tell you about my background and experience.
                     </P>
                     <br>
-                    <br> 
                     <p>
                         Take a look around, stay a while and enjoy!
                     </p> 
@@ -57,23 +59,71 @@
             </strong>
         </div>
 
-        <!--Slide Show-->
-        <div id="Slideshow_Background">
-            <!--slide 1 of 6-->
-            <div id="Slideshow_Container">
-                <div class="mySlides fade" style="text-align: center;" style="display: block;">
-                    <img class="Slideshow_Image" src="./images/trason_pic.jpg" alt="picture of myself">
-                    <div class="Slideshow_text">How can I be of service to you?</div>
+        <!--Slide Show section-->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+                    <!--slide 1 of 6-->
+                    <div class="mySlides fade">   <!--style="text-align: center;" style="display: block;"-->
+                        <img class="Slideshow_Images" src="./images/trason_pic.jpg" alt="profile picture">
+                        <div class="text">How can I be of service to you?</div> 
+                    </div>
+                    <!--slide 2 of 6-->
+                    <div class="mySlides fade">   <!--style="text-align: center;" style="display: block;"-->
+                        <img class="Slideshow_Images" src="./images/HTML_CSS_and_JavaScript.jpeg" alt="HTML, JavaScript, CSS Logos">
+                        <!--<div class="Slideshow_text">How can I be of service to you?</div>-->
+                        <div class="text">I am a full-stack software developer, <br> trained in:<br>HTML, CSS, JavaScript</div>
+                    </div>
+                    <!--slide 3 of 6-->
+                    <div class="mySlides fade">   <!--style="text-align: center;" style="display: block;"-->
+                        <img class="Slideshow_Images" src="./images/Python.png" alt="Python Logos">
+                        <!--<div class="Slideshow_text">How can I be of service to you?</div>-->
+                        <div class="text">the popular programming language Python.</div>
+                    </div>
+                    <!--slide 4 of 6-->
+                    <div class="mySlides fade">   <!--style="text-align: center;" style="display: block;"-->
+                        <img class="Slideshow_Images" src="./images/C_Sharp_and_Dot_NET.png" alt="C# Logo">
+                        <!--<div class="Slideshow_text">How can I be of service to you?</div>-->
+                        <div class="text">How can I be of service to you?</div>
+                    </div>
+                    <!--slide 5 of 6-->
+                    <div class="mySlides fade">   <!--style="text-align: center;" style="display: block;"-->
+                        <img class="Slideshow_Images" src="./images/SQL_and_Database(1).jpg" alt="SQL Logo">
+                        <!--<div class="Slideshow_text">How can I be of service to you?</div>-->
+                        <div class="text">How can I be of service to you?</div>
+                    </div>
+                    <!--slide 6 of 6-->
+                    <div class="mySlides fade">   <!--style="text-align: center;" style="display: block;"-->
+                        <img class="Slideshow_Images" src="/images/GitHub.png" alt="GitHub Logo" >
+                        <!--<div class="Slideshow_text">How can I be of service to you?</div>-->
+                        <div class="text">How can I be of service to you?</div>
+                    </div>
+                    <!--Previous and next buttons-->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!--Slideshow dots (these are another way for users to naviage through the slideshow)-->
+                <div style="text-align: center;">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
                 </div>
             </div>
         </div>
+        
 
         <!--About Section-->
-        <!--Left Column-->
         <div class="Row" id="About">
+            <!--Left Column-->
             <div class="Column_2">
-                <img class="img_location" src="./images/software_coding.jpg" alt="picture of software" style="width: 335px; height: 151px; scale: 1.5; margin: 100px;">
+                <img class="img_location" src="./images/software_coding.jpg" alt="picture of software" style="width: 335px; height: 151px; scale: 1.5; margin: 100px; ">
             </div>
+            <!--Right Column-->
             <di class="Column_1">
                 <h1>About</h1>
                 <p>
@@ -106,31 +156,34 @@
             </div>
         </div>
 
-        <!--Bottom Left Column-->
+        <!--Bottom Left Column
         <div class="Column_2">
             <a href="https://github.com/RohanRiders/HTML-CSS-Projects" target="_blank"><img class="img_location" src="./images/pexels-lukas-574071.jpg" alt="person typing"></a>
-        </div>
+        </div>-->
 
         <!--Contact Section-->
         <div class="Row" id="Contact"> 
-            
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
             <!--Contact image, left column-->
-            <div class="Column_1">
-                <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
                 <!--This specifies where and how to send the form data; we are leaving it blank-->
-                <form action="" method="POST"> <!--Here we are utilizing a 3rd party service to submit the contact form data, inset your formspread endpoint in the action attribute-->
+                <form action="https://formspree.io/f/mjvnonbd" method="POST" class="form-container"> <!--Here we are utilizing a 3rd party service to submit the contact form data, inset your formspread endpoint in the action attribute-->
                     <h1>Contact</h1>
-                    <label><b>Name:</b></label>
-                        <input type="text" placeholder="Please enter your name here">
-                    <label><b>Email:</b></label>
-                        <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                        
+                    <label for="name"><b>Name</b></label>
+                        <input type="text" placeholder="Please enter your name here" name="name" required>
+                    <label for="phone"><b>Phone</b></label>
+                        <input type="text" placeholder="Please enter your number here" name="phone" required>   
+                    <label for="email"><b>Email:</b></label>
+                        <input type="text" placeholder="Please write your message here" name="email" required>
+                    <label for="message"><b>Message</b></label>
+                        <input type="text" placeholder="Type your message here" name="message">
+
                     <button type="submit" value="SUBMIT">SUBMIT</button>
                     <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                 </form>
             </div>
         </div>
-
+        <!--Footer Section-->
         <footer>
                 <p class="center">&copy  Copy right LLC</p>            
         </footer>
