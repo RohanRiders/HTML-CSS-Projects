@@ -40,9 +40,12 @@ h1:hover {
 }
 
 p {
-    font-size: x-large;
-    padding: 1vh;
+    font-family: perpetua, Rockwell Extra Bold;
     text-align: center;
+    letter-spacing: .1vw;
+    font-size: 2.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
 }
 
 p:hover {
@@ -78,6 +81,10 @@ img {
     max-height: 100%; /* Ensures all images stay within the height of their container */
     display: block; /* By specifying block display we can ensure our images are able to be centered */
     margin: auto auto auto auto; /* This centers all images */
+}
+
+img:hover {
+    filter: grayscale(5%); /*Brings back most of the image's color when hovered over*/
 }
 
 footer {
@@ -295,7 +302,7 @@ footer {
     margin: .25vw; /* adds additional spacing between the dots */ 
     background-color: white; /* Makes the dots white */
     border-radius: 50%; /* Makes the dots circles by rounding each corner */
-    display: inline-block; /* Allows the dots to sit next to eachother rather than on a new line */
+    display: inline-block; /* Allows the dots to sit next to each other rather than on a new line */
     transition: background-color 0.6s ease; /* When clicked on the dots transition to a different color when clicked or hovered over (the affect is defined below) */
     z-index: 1; /* This ensures the dots will be displayed above any other elements */
 }
