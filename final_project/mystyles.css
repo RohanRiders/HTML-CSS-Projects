@@ -80,7 +80,7 @@ img {
     max-width: 100%; /* Ensures all images stay within the width of their container */
     max-height: 100%; /* Ensures all images stay within the height of their container */
     display: block; /* By specifying block display we can ensure our images are able to be centered */
-    margin: auto auto auto auto; /* This centers all images */
+    margin: auto; /* This centers all images */
 }
 
 img:hover {
@@ -167,13 +167,14 @@ footer {
 
 /*Texts over the video */
 .Video_Text {
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    width: 100%;
-    padding: 5%;
-    padding-top: 2vh;
-    -webkit-animation: moveVideoText 5.75s;
-    animation: moveVideoText 5.75s;
+    background: rgba(0, 0, 0, 0.5); /* This provides a semi-transparents background for the text to sit over */
+    color: white; /* Makes the font color white */
+    width: 100%; /* Ensures the video-text container fills the width of the video */
+    height: 100vh; /* This ensures the video-text container fills the height of the viewport so that the slideshow is not partially displayed */
+    padding-top: 2vh; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
+    position: relative; /* This sets the text relative to its normal positioning, allowing us to use the animation below */
+    -webkit-animation: moveVideoText 5.75s; /* Animation for Safari 4.0 - 8.0 */
+    animation: moveVideoText 5.75s; /* moveVideoText animation set to 5.75s to match the movenavText animation */
 }
 
 @keyframes moveVideoText {
